@@ -1,3 +1,9 @@
+# Misc
+sass
+package-lock.json
+package.json
+gulpfile.js
+
 # Logs
 logs
 *.log
