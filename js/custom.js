@@ -3,6 +3,14 @@
   "use strict";
 
     // COLOR MODE
+    let matched = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if(matched){
+      $('.color-mode-icon').toggleClass('active');
+      $('body').toggleClass('dark-mode');
+    }else{}
+    
+
     $('.color-mode').click(function(){
         $('.color-mode-icon').toggleClass('active')
         $('body').toggleClass('dark-mode')

@@ -36,7 +36,7 @@ a:hover {
 }
 
 .navbar-brand .uil {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 p {
@@ -244,13 +244,13 @@ b, strong {
 }
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:last-child {
   transform: rotate(-45deg);
-  bottom: 1px;
+  bottom: 3px;
 }
 .navbar-toggler .navbar-toggler-icon {
-  background: #212121;
+  background: #ffc200;
   display: block;
   width: 100%;
-  height: 2px;
+  height: 4px;
   margin: 5px 0;
   transition: all 0.4s ease;
   position: relative;
@@ -290,6 +290,9 @@ b, strong {
 }
 
 .dark-mode {
+  background: #0c0c0d;
+}
+.dark-mode .navbar-collapse{
   background: #0c0c0d;
 }
 .dark-mode .navbar-light .navbar-nav .nav-link {
@@ -476,8 +479,12 @@ b, strong {
     padding-bottom: 4rem;
   }
 
-  .color-mode {
-    display: none;
+  .about-text {
+    text-align: center;
+  }
+
+  .color-mode{
+    display: flex;
   }
 
   .about-image {
@@ -502,8 +509,16 @@ b, strong {
     font-size: 2em;
   }
 
+  .color-mode{
+    display: flex;
+  }
+
   .animated-item {
     font-size: 28px;
+  }
+
+  .about-text {
+    text-align: center;
   }
 
   .navbar-collapse {
@@ -512,16 +527,27 @@ b, strong {
     padding-bottom: 20px;
   }
 
+  .dark-mode .navbar-collapse{
+    background: #0c0c0d;
+  }
+
   .navbar-expand-sm .navbar-nav .nav-link {
     padding: 3px 20px;
   }
 }
 @media (max-width: 580px) {
+  .about-text {
+    text-align: center;
+  }
 	.animated-info {
 		min-width: 280px;
 	}
   .animated-item {
     font-size: 30px;
+  }
+
+  .color-mode{
+    display: flex;
   }
 
   .custom-btn-group {
@@ -545,6 +571,10 @@ b, strong {
 @media (max-width: 320px) {
   .animated-text {
     margin-top: 0;
+  }
+
+  .color-mode{
+    display: flex;
   }
 
   .about-text {
